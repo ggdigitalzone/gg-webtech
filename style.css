@@ -20,26 +20,19 @@ about section code here */
     justify-content: space-between;
     padding: 15px;
 }
-
 .service{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 15px;
 }
-
-.container{
-    border: 2px solid black;
-    width: 300px;
-    height: 500px;
-    box-shadow: 3px 3px 3px 3px black;
-}
-
-.container img{
-    width: 296px;
+.card{
+    width: 100%;
     height: 400px;
 }
-
+@media only screen and (max-width:700px){
+    .card-body img{
+        display: grid;
+        width: 100%;
+    }
+}
 @media only screen and (max-width:960px){
     .about{
         display: grid;
@@ -48,24 +41,6 @@ about section code here */
     }
     .img{
         text-align: center;
-    }
-    
-    .container{
-        width: 90%;
-    }
-    .container img{
-        width: 90%;
-    }
-}
-@media only screen and (max-width:1000px){
-    .service{
-        display: grid;
-    }
-    .container{
-        width: 90%;
-    }
-    .container img{
-        width: 90%;
     }
 }
 
